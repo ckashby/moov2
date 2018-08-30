@@ -9,10 +9,11 @@ class PagesController < ApplicationController
       format.pdf do
         pdf = Prawn::Document.new
         pdf.text "Way to go girl!"
-        send_data pdf.render
+        send_data pdf.render, filename: "mypdf.pdf",
+                              type: "application/pdf",
+                              disposition: "inline"
       end
-    end 
+    end
   end
-
 
 end
