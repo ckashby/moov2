@@ -1,4 +1,4 @@
-<%= image_tag @post.image.thumb.url %>
+<%= image_tag(@post.image.thumb.url, alt: "post image") if @post.image? %> 
 
 <%= form_for @post do |f| %>
   <%= f.label :title %><br>
