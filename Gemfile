@@ -15,10 +15,17 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 gem 'bootstrap', '~> 4.1.3'
 
+gem 'devise', '~> 4.5'
+gem 'cancancan', '~> 2.2'
+
 gem 'simple_form', '~> 4.0', '>= 4.0.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
-gem 'devise', '~> 4.5'
+
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
+
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'prawn', '~> 2.2', '>= 2.2.2'
+
 gem 'acts_as_votable', '~> 0.11.1'
 
 gem 'faker'
