@@ -19,6 +19,8 @@ gem 'simple_form', '~> 4.0', '>= 4.0.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
 gem 'devise', '~> 4.5'
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
+gem 'acts_as_votable', '~> 0.11.1'
+
 gem 'faker'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

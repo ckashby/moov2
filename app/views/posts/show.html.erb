@@ -1,3 +1,9 @@
 <h2><%= @post.title %> | <%= link_to "Back", posts_path %></h2>
 
-<%= image_tag(@post.image.url, alt: 'Post image') if @post.image? %>
+<%= image_tag(@post.image.thumb.url, alt: 'Post image') if @post.image? %>
+
+<hr>
+<%= link_to "Upvote", like_post_path(@post), method: :put %> |
+<%= link_to "Downvote", dislike_post_path(@post), method: :put %>
+<hr>
+Likes: <%= @post.get_upvotes.size %> | Dislikes: <%= @post.get_downvotes.size %>
