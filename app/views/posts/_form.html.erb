@@ -1,3 +1,5 @@
+<%= image_tag @post.image.thumb.url %>
+
 <%= form_for @post do |f| %>
   <%= f.label :title %><br>
   <%= f.text_field :title %><br>
